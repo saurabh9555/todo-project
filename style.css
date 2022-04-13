@@ -1,0 +1,102 @@
+.todo-content{
+    width: 50%;
+    border: 1px solid lightgray;
+    padding: 30px;
+    margin:50px;
+  }
+  .todo-input{
+    display:flex;
+    width:100%;
+    margin-bottom:20px;
+  }
+  .todo-input input{
+    width: 100%;
+    padding: 5px 5px;
+    height: 30px;
+    border: 1px solid #c5c5c5;
+    font-size: 18px;
+  }
+  .todo-input input:focus{
+    outline:unset;
+  }
+  .list-row textarea:focus{
+    outline:unset;
+  }
+  .list-row textarea{
+    width:100%;
+    background:transparent;
+    border:none;
+    color:green;
+    font-size:17px;
+  }
+  .list-row textarea:focus{
+    outline:unset;
+  }
+  .todo-input button{
+    padding: 5px 30px;
+    background: #c5c5c5;
+    color: white;
+    border: 1px solid #c5c5c5;
+    cursor: pointer;
+    transition:.5s;
+    font-size:18px;
+  }
+  .todo-input button:hover{
+    background:#b5b3b3;
+  }
+  .todo-input button:focus{
+    outline:unset;
+  }
+  .line-through{
+    text-decoration:line-through;
+  }
+  .right{
+    float:left
+  }
+  .edit-todo,.update-todo,.remove-todo{
+    padding: 0px 5px;
+    cursor:pointer;
+  }
+  .list-num{
+    font-weight:bold;
+    padding-right:5px;
+  }
+  .todo-content .todo-list{
+    list-style-type: none;
+    padding-left: 0px;
+    background: #f9f9f9;
+  }
+  .todo-content .list-error,.error{
+    color:red;
+  }
+  .todo-content .todo-list .list-row{
+    padding:5px 10px;
+    position:relative;
+    word-break: break-all;
+    display:flex;
+    font-size:18px;
+    transition:.1s;
+    cursor:pointer; 
+  }
+  .todo-content .list-row .list-data,.todo-content .list-row .update-data{
+    width:100%;
+    text-align:justify;
+  }
+  .todo-content .todo-list .list-row:nth-child(even){
+    background:#e4e4e4;
+  }
+  .todo-list .edit-todo,.remove-todo,.update-todo{
+    visibility:hidden;
+  }
+  .todo-content .todo-list .list-row:hover{
+    background:#d8d8d8;
+  }
+  .todo-content .todo-list .list-row:hover .edit-todo{
+    visibility:visible;
+  }
+  .todo-content .todo-list .list-row:hover .remove-todo{
+    visibility:visible;
+  }
+  .todo-content .todo-list .list-row:hover .update-todo{
+    visibility:visible;
+  }
